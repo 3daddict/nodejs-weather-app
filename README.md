@@ -5,4 +5,6 @@ This project was made to practice NodeJs and is part of a Udemy course by Andrew
 ## Feature List
 
 ## What I've learned
-  * 
+  * request.js
+  * API requests
+  * Backend Error Handling
