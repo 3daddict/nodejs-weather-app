@@ -8,3 +8,4 @@ This project was made to practice NodeJs and is part of a Udemy course by Andrew
   * request.js
   * API requests
   * Backend Error Handling
+  * Asyncronis and Callback Requests
