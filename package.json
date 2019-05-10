@@ -1,0 +1,12 @@
+{
+  "name": "nodejs-weather-app",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/3daddict/nodejs-weather-app.git",
+  "author": "Michael <print@3daddict.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "request": "^2.88.0"
+  }
+}
