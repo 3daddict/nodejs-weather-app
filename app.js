@@ -9,14 +9,14 @@ if(!address) {
     console.log('Please provide an address')
 } else {
     //Geocode finds the lat, long and place name
-    geocode(address, (error, data) => {
+    geocode(address, (error, { latitude, longitude, location }) => {
         if(error) return console.log(error);
         //Forcast finds the weather summary
         //Forcast uses the data object from geocode
-        forcast(data.latitude, data.longitude, (error, forcastData) => {
+        forcast(latitude, longitude, (error, forcastData) => {
             if(error) return console.log(error);
             //Data Return if all error false
-            console.log(data.location);
+            console.log(location);
             console.log(forcastData);
         });
     });
