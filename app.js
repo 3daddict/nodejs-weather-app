@@ -2,15 +2,25 @@ require('dotenv').config();
 const geocode = require('./utils/geocode');
 const forcast = require('./utils/forcast');
 
-//Geocode finds the lat, long and place name
-geocode('montreal', (error, data) => {
-    console.log('Error:', error);
-    console.log('Data:', data);
-    //Forcast finds the weather summary
-    //Forcast uses the data object from geocode
-    forcast(data.latitude, data.longitude, (error, data) => {
-        console.log('Error:', error);
-        console.log('Data:', data);
+//[2] is the additional data passed in the node app.js call i.e. node app.js "New York"
+const address = process.argv[2]
+//Check if address is entered
+if(!address) {
+    console.log('Please provide an address')
+} else {
+    //Geocode finds the lat, long and place name
+    geocode(address, (error, data) => {
+        if(error) return console.log(error);
+        //Forcast finds the weather summary
+        //Forcast uses the data object from geocode
+        forcast(data.latitude, data.longitude, (error, forcastData) => {
+            if(error) return console.log(error);
+            //Data Return if all error false
+            console.log(data.location);
+            console.log(forcastData);
+        });
     });
-});
+}
+
+
 

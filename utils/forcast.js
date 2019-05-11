@@ -9,9 +9,7 @@ const url = `https://api.darksky.net/forecast/${process.env.WEATHER_SECRET_KEY}/
         } else if(response.body.length === 0) {
             callback('Error: Unable to find your input location', undefined);
         } else {
-            callback(undefined, {
-                forcast: response.body.daily.data[0].summary
-            })
+            callback(undefined, response.body.daily.data[0].summary)
         }
     });
 }

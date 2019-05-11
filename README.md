@@ -10,4 +10,4 @@ This project was made to practice NodeJs and is part of a Udemy course by Andrew
   * Backend Error Handling
   * Asyncronis and Callback Requests
   * Callback Chaining Pattern
-  
+  * Process Arguments - process.argv[2]
