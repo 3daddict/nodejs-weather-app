@@ -12,3 +12,5 @@ This project was made to practice NodeJs and is part of a Udemy course by Andrew
   * Callback Chaining Pattern
   * Process Arguments - process.argv[2]
   * Object Descructuring
+  * Core http/https module
+  * 
