@@ -1,11 +1,9 @@
+const path = require('path');
 const express = require('express');
 
 const app = express();
-
-//Express get method
-app.get('', (req, res) => {
-    res.send('<h1>Weather</h1>');
-});
+//express static route to main dir
+app.use(express.static(path.join(__dirname, '../public')));
 
 app.get('/help', (req, res) => {
     res.send([
