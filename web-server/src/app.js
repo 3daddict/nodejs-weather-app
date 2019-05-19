@@ -52,12 +52,14 @@ app.get('/weather', (req, res) => {
 //404 Routes
 app.get('/help/*', (req, res) => {
     res.render('404', {
+        title: 'Help 404',
         errorMsg: 'Help article not found!'
     })
 });
 
 app.get('*', (req, res) => {
     res.render('404', {
+        title: '404',
         errorMsg: 'Page not found!'
     })
 });
