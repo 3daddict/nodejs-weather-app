@@ -7,15 +7,23 @@
     <title>Weather App</title>
     <link rel="shortcut icon" href="/images/waether.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
-    <script type="text/javascript" src="/js/app.js"></script>
 </head>
 <body>
     <div class="main-content">
         {{>header}}
         <p>Use this site to get your weather forcast!</p>
+
+        <form action="">
+            <input type="text" placeholder="Location" />
+            <button>
+                Search
+            </button>
+        </form>
     </div>
     
 
     {{>footer}}
+
+        <script type="text/javascript" src="/js/app.js"></script>
 </body>
 </html>
