@@ -55,11 +55,15 @@ app.get('/weather', (req, res) => {
     }
 
     geocode(req.query.address, (error, { latitude, longitude, location }) => {
-        if(error) return console.log(error);
+        if(error) {
+           return res.send({ error })
+        }
         //Forcast finds the weather summary
         //Forcast uses the data object from geocode
         forcast(latitude, longitude, (error, forcastData) => {
-            if(error) return console.log(error);
+            if(error) {
+                return res.send({ error })
+             }
             //Data Return if all error false
             res.send({
                 forecast: forcastData,
