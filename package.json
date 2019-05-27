@@ -1,11 +1,15 @@
 {
-  "name": "nodejs-weather-app",
+  "name": "web-server",
   "version": "1.0.0",
-  "main": "app.js",
-  "repository": "https://github.com/3daddict/nodejs-weather-app.git",
-  "author": "Michael <print@3daddict.com>",
+  "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
+    "express": "4.16.4",
+    "hbs": "4.0.1",
     "dotenv": "^8.0.0",
     "request": "^2.88.0"
   }
