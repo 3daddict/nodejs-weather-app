@@ -13,5 +13,7 @@ This project was made to practice NodeJs and is part of a Udemy course by Andrew
   * Process Arguments - process.argv[2]
   * Object Descructuring
   * Fetch
-  * Heroku & Heroku CLI
   * SSH Key Generation
+  * Heroku & Heroku CLI
+  * Heroku procfile % Config Vars
+  * 
